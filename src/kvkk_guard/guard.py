@@ -2,13 +2,14 @@ from kvkk_guard.detectors.email import find_email
 from kvkk_guard.detectors.iban import find_iban
 from kvkk_guard.detectors.phone import find_phone
 from kvkk_guard.detectors.tckn import find_tckn
-
+from kvkk_guard.detectors.person import find_person
 # Sıra önemli: önce uzun/özel olanlar maskelenir, sonra genel olanlar.
 DETECTORS = [
     ("EPOSTA", find_email),
     ("IBAN", find_iban),
     ("TC", find_tckn),
     ("TELEFON", find_phone),
+    ("KISI", find_person),
 ]
 
 

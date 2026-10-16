@@ -7,3 +7,7 @@ name = "kvkk-guard"
 version = "0.1.0"
 description = "LLM'lere gönderilen metinlerdeki kişisel verileri maskeleyen katman"
 requires-python = ">=3.10"
+dependencies = [
+    "transformers",
+    "torch",
+]
