@@ -1,5 +1,7 @@
 # kvkk-guard
 
+![tests](https://github.com/edpolat/kvkk_guard/actions/workflows/tests.yml/badge.svg)
+
 **LLM'lere gönderilen metinlerdeki Türkçe kişisel verileri, metin bilgisayardan çıkmadan önce maskeleyen ve LLM'in cevabında geri açan Python katmanı.**
 
 ```python
