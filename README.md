@@ -52,8 +52,7 @@ LLM'e bağlanmak için ayrıca `openai` kütüphanesi gerekir (paketin kendisi b
 pip install openai
 ```
 
-### Yerel model ile deneme (ücretsiz, internet gerektirmez)
-
+### Yerel model ile deneme (ücretsiz, model indirildikten sonra internet gerektirmez)
 ```bash
 brew install ollama            # macOS; diğer sistemler için ollama.com
 brew services start ollama
@@ -529,7 +528,7 @@ Hem LLM'in bunları özel ifade olarak tanıması kolaylaşıyor hem de geri aç
 NER modelleri tam olarak bu iş için eğitilmiştir, CPU'da bile hızlı çalışır ve bilgisayarda yerel olarak çalıştırılabilir. Tespit için bulut LLM'i kullanmak, verinin maskelenmeden önce dışarı çıkması anlamına gelirdi.
 
 **Hangi LLM'i kullanmalıyım?**
-Paket sağlayıcıdan bağımsızdır. Gizlilik seçilen modelden etkilenmez; cevap kalitesi ise etkilenir. Yerel denemelerde Qwen2.5 7B, 3B sürümüne göre hem Türkçede hem etiketleri korumada belirgin şekilde daha başarılıydı.
+Yerel denemelerde Qwen2.5 7B, 3B sürümüne göre hem Türkçede hem de görevi anlamada belirgin şekilde daha başarılıydı; iki model de etiketleri korudu.
 
 **Testler neden birkaç saniye sürüyor?**
 Testlerin bir kısmı NER modelini yüklüyor. Model bir kez yüklendikten sonra aynı test oturumunda tekrar kullanılıyor.
